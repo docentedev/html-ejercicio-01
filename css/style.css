@@ -1,3 +1,92 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  border: solid 1px salmon;
+  background-color: rgb(237, 138, 127);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+nav {
+  background-color: salmon;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 2px #850f0f;
+}
+
+nav .logo-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav .logo-title h1 {
+  font-size: 16px;
+  color: #3a0c0c;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  border-radius: 16px;
+  background-color: salmon;
+  color: aliceblue;
+}
+
+ul li:hover {
+  background-color: rgb(157, 58, 47);
+  color: rgb(100, 137, 170);
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 4px 8px;
+  display: block;
+}
+
+/* grid 12 columnas */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
 }
